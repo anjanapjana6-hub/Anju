@@ -3,299 +3,394 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anjana P | Portfolio</title>
+<title>Complete Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
 }
 
 body{
-    background:linear-gradient(135deg,#000000,#0f172a,#1e1b4b);
-    color:#e9d5ff;
+background:linear-gradient(135deg,#0b1320,#0f172a,#111827);
+color:#e5e7eb;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#1e1b4b,#6d28d9);
-}
-
-header img{
-    width:180px;
-    border-radius:50%;
-    border:4px solid #c084fc;
-    margin-bottom:15px;
-}
-
-header h1{
-    color:white;
-    font-size:3rem;
-}
-
-header p{
-    color:#ddd6fe;
-}
-
+/* NAV */
 nav{
-    background:#111827;
-    text-align:center;
-    padding:15px;
-    position:sticky;
-    top:0;
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
 }
 
-nav a{
-    color:#c084fc;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+nav h2{color:#2dd4bf;}
+nav a{color:white;margin:0 10px;text-decoration:none;font-size:14px;}
+nav a:hover{color:#2dd4bf;}
+
+/* HERO */
+header{
+text-align:center;
+padding:100px 20px;
 }
 
-nav a:hover{
-    color:white;
-}
-
-section{
-    width:90%;
-    max-width:1000px;
-    margin:25px auto;
-    background:#111111;
-    padding:25px;
-    border-radius:15px;
-    border:1px solid #6d28d9;
-    box-shadow:0 0 15px rgba(109,40,217,0.3);
-}
-
-h2{
-    color:#60a5fa;
-    margin-bottom:15px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:8px;
-}
+header h1{font-size:3rem;color:#2dd4bf;}
+header p{color:#cbd5e1;margin-top:10px;}
 
 .btn{
-    display:inline-block;
-    background:#6d28d9;
-    color:white;
-    padding:10px 20px;
-    text-decoration:none;
-    border-radius:8px;
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2dd4bf;
+color:black;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
 }
 
-.btn:hover{
-    background:#7c3aed;
+/* SECTION */
+section{
+padding:60px 8%;
 }
 
-footer{
-    text-align:center;
-    padding:20px;
-    background:#1e1b4b;
-    color:white;
+.title{
+text-align:center;
+font-size:2rem;
+margin-bottom:30px;
+position:relative;
+}
+
+.title::after{
+content:"";
+width:90px;
+height:4px;
+background:#2dd4bf;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:-10px;
+border-radius:10px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+margin-bottom:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px rgba(45,212,191,0.4);
+}
+
+/* GRID */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* COUNTER */
+.counter{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.count-box{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:15px;
+min-width:150px;
+text-align:center;
+}
+
+/* SOCIAL CENTER */
+.social{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.social a{
+display:flex;
+align-items:center;
+gap:8px;
+padding:12px 18px;
+border-radius:25px;
+background:rgba(255,255,255,0.05);
+color:#2dd4bf;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+transform:translateY(-3px);
+box-shadow:0 0 15px rgba(45,212,191,0.5);
+}
+
+/* EDUCATION TEXT */
+.card h3{
+color:#2dd4bf;
+margin-bottom:8px;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.5;
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
-
-<h1>ANJANA P</h1>
-
-<p>BCA Student | Python | Java | PHP | Web Developer</p>
-
-</header>
-
+<!-- NAV -->
 <nav>
+<h2>PORTFOLIO</h2>
+<div>
+<a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
+</div>
 </nav>
 
+<!-- HOME -->
+<header id="home">
+<h1>YOUR NAME</h1>
+<p>BCA Student | Developer | AI Enthusiast</p>
+<a class="btn">Download Resume</a>
+</header>
+
+<!-- ABOUT -->
 <section id="about">
-<h2>Who I Am</h2>
-<p>
-Hi, I'm Anjana P, a BCA student passionate about software development,
-web development, artificial intelligence and modern technologies.
-I enjoy learning new skills and creating innovative projects.
-</p>
+<h2 class="title">About Me</h2>
+<div class="card">Passionate learner in software development, AI tools, and modern technologies.</div>
 </section>
 
+<!-- CAREER -->
 <section>
-<h2>Career Objective</h2>
-<p>
-To build a successful career in the IT industry by continuously
-improving my technical knowledge and contributing to innovative solutions.
-</p>
+<h2 class="title">Career Objective</h2>
+<div class="card">To become a skilled software engineer and build impactful solutions.</div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
-<h2>Education</h2>
-<ul>
-<li>Bachelor of Computer Applications (BCA)</li>
-<li>Higher Secondary Education</li>
-<li>SSLC</li>
-</ul>
+<h2 class="title">Education</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>BCA (2024 - Present)</h3>
+<p>Bachelor of Computer Applications. Learning programming, web development, AI basics.</p>
+</div>
+
+<div class="card">
+<h3>Higher Secondary (2022 - 2024)</h3>
+<p>Completed +2 with computer science foundation and mathematics.</p>
+</div>
+
+<div class="card">
+<h3>SSLC (2022)</h3>
+<p>Completed secondary education with strong academic foundation.</p>
+</div>
+
+</div>
 </section>
 
+<!-- EXPERIENCE -->
+<section>
+<h2 class="title">Experience (IIT Palakkad)</h2>
+<div class="card">Internship experience in technology and research environment.</div>
+</section>
+
+<!-- SKILLS -->
 <section id="skills">
-<h2>Technical Skills</h2>
-<ul>
-<li>Python</li>
-<li>Java</li>
-<li>PHP</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>MySQL</li>
-<li>Git & GitHub</li>
-</ul>
+<h2 class="title">Technical Expertise</h2>
+<div class="cards">
+<div class="card">Python</div>
+<div class="card">Java</div>
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+</div>
+</section>
+
+<!-- PROFESSIONAL -->
+<section>
+<h2 class="title">Professional Skills</h2>
+<div class="cards">
+<div class="card">Communication</div>
+<div class="card">Team Work</div>
+<div class="card">Problem Solving</div>
+<div class="card">Leadership</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+<h2 class="title">Certifications</h2>
+<div class="counter">
+<div class="count-box">5+ Certifications</div>
+<div class="count-box">Add-on Courses</div>
+<div class="count-box">Internship</div>
+<div class="count-box">Skill Growth</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2 class="title">Featured Projects</h2>
+<div class="cards">
+<div class="card">Student Management System</div>
+<div class="card">Portfolio Website</div>
+</div>
+</section>
+
+<!-- ALL EXTRA TOPICS -->
+<section>
+<h2 class="title">My Journey</h2>
+<div class="card">Student → Developer → Intern → Future Engineer</div>
 </section>
 
 <section>
-<h2>Soft Skills</h2>
-<ul>
-<li>Communication</li>
-<li>Leadership</li>
-<li>Problem Solving</li>
-<li>Teamwork</li>
-<li>Time Management</li>
-</ul>
+<h2 class="title">Future Goals</h2>
+<div class="card">Become a skilled Software Engineer & AI Developer</div>
 </section>
 
 <section>
-<h2>Experience</h2>
-<p>
-Worked on academic projects and internship activities related to
-web development, documentation, and software applications.
-</p>
+<h2 class="title">Learning Path</h2>
+<div class="card">Python → Web Dev → AI → Data Science</div>
 </section>
 
 <section>
-<h2>Internship</h2>
-<ul>
-<li>Project Documentation</li>
-<li>Website Development</li>
-<li>Software Testing</li>
-<li>Team Collaboration</li>
-</ul>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-<ul>
-<li>Student Management System</li>
-<li>Online Library Management System</li>
-<li>Portfolio Website</li>
-<li>Database Management Project</li>
-</ul>
+<h2 class="title">AI Exploration</h2>
+<div class="card">Learning AI tools and automation systems.</div>
 </section>
 
 <section>
-<h2>Certifications</h2>
-<ul>
-<li>Python Programming</li>
-<li>Web Development</li>
-<li>AI Fundamentals</li>
-</ul>
+<h2 class="title">Current Focus</h2>
+<div class="card">Improving coding skills and building projects.</div>
 </section>
 
 <section>
-<h2>Achievements</h2>
-<ul>
-<li>Seminar Participation</li>
-<li>Workshop Participation</li>
-<li>Project Presentations</li>
-</ul>
+<h2 class="title">Recent Learnings</h2>
+<div class="card">HTML, CSS, JavaScript, GitHub</div>
 </section>
 
 <section>
-<h2>Hobbies</h2>
-<ul>
-<li>Learning New Technologies</li>
-<li>Web Designing</li>
-<li>Reading Technology Articles</li>
-<li>Listening to Music</li>
-</ul>
+<h2 class="title">Academic Highlights</h2>
+<div class="card">Good academic performance in BCA.</div>
 </section>
 
 <section>
-<h2>Interests</h2>
-<ul>
-<li>Artificial Intelligence</li>
-<li>Web Development</li>
-<li>Cyber Security</li>
-<li>Software Development</li>
-</ul>
+<h2 class="title">Workshops & Seminars</h2>
+<div class="card">Attended tech workshops and seminars.</div>
 </section>
 
 <section>
-<h2>Tools I Use</h2>
-<ul>
-<li>VS Code</li>
-<li>GitHub</li>
-<li>Canva</li>
-<li>Figma</li>
-<li>MySQL</li>
-</ul>
+<h2 class="title">Team Collaboration</h2>
+<div class="card">Worked in group projects effectively.</div>
 </section>
 
 <section>
-<h2>Languages Known</h2>
-<ul>
-<li>English</li>
-<li>Malayalam</li>
-<li>Hindi</li>
-</ul>
+<h2 class="title">Problem Solving Approach</h2>
+<div class="card">Analyze → Break → Solve → Improve</div>
 </section>
 
 <section>
-<h2>Resume</h2>
-<a href="resume.pdf" class="btn">Download Resume</a>
+<h2 class="title">Quick Facts</h2>
+<div class="cards">
+<div class="card">Fast Learner</div>
+<div class="card">Creative Thinker</div>
+<div class="card">Team Player</div>
+</div>
 </section>
 
 <section>
-<h2>Connect With Me</h2>
-<p>LinkedIn: Your LinkedIn Link</p>
-<p>GitHub: Your GitHub Link</p>
-<p>Email: yourmail@example.com</p>
+<h2 class="title">Creative Skills</h2>
+<div class="card">UI Design, Canva, Basic Editing</div>
 </section>
 
+<section>
+<h2 class="title">Digital Skills</h2>
+<div class="card">Internet Tools, Cloud Basics, AI Tools</div>
+</section>
+
+<section>
+<h2 class="title">Knowledge Areas</h2>
+<div class="cards">
+<div class="card">Programming</div>
+<div class="card">Web Development</div>
+<div class="card">AI Basics</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Why Choose Me</h2>
+<div class="card">Hardworking, Quick Learner, Problem Solver</div>
+</section>
+
+<section>
+<h2 class="title">Professional Profile</h2>
+<div class="card">Dedicated student passionate about technology.</div>
+</section>
+
+<section>
+<h2 class="title">Personal Strengths</h2>
+<div class="card">Communication, Creativity, Adaptability</div>
+</section>
+
+<section>
+<h2 class="title">Mission & Vision</h2>
+<div class="card">To become a successful software engineer.</div>
+</section>
+
+<section>
+<h2 class="title">Professional Network</h2>
+<div class="card">LinkedIn, GitHub, Learning Communities</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-<h2>Contact Me</h2>
+<h2 class="title">Let's Connect</h2>
 
-<form>
-<input type="text" placeholder="Your Name"
-style="width:100%;padding:10px;margin:10px 0;">
+<div class="social">
 
-<input type="email" placeholder="Your Email"
-style="width:100%;padding:10px;margin:10px 0;">
+<a href="https://linkedin.com">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
 
-<textarea placeholder="Your Message"
-style="width:100%;height:120px;padding:10px;"></textarea>
+<a href="https://github.com">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
 
-<br><br>
+<a href="mailto:yourmail@gmail.com">
+<i class="fa-solid fa-envelope"></i> Email
+</a>
 
-<button class="btn">Send Message</button>
-</form>
+</div>
 
 </section>
-
-<footer>
-<p>© 2026 ANJANA P | Portfolio Website</p>
-</footer>
 
 </body>
 </html>
