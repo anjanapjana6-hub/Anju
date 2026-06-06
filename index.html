@@ -3,159 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Complete Portfolio</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Anjana P | Portfolio</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-scroll-behavior:smooth;
-}
-
 body{
-background:linear-gradient(135deg,#0b1320,#0f172a,#111827);
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#050505,#0f172a,#1e293b);
 color:#e5e7eb;
 }
 
 /* NAV */
 nav{
-position:sticky;
-top:0;
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:15px 8%;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
+background:rgba(0,0,0,0.5);
+position:sticky;
+top:0;
 }
 
-nav h2{color:#2dd4bf;}
-nav a{color:white;margin:0 10px;text-decoration:none;font-size:14px;}
-nav a:hover{color:#2dd4bf;}
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+nav a:hover{color:#38bdf8;}
 
 /* HERO */
 header{
 text-align:center;
-padding:100px 20px;
+padding:90px 20px;
 }
 
-header h1{font-size:3rem;color:#2dd4bf;}
-header p{color:#cbd5e1;margin-top:10px;}
+header h1{
+font-size:3rem;
+color:#38bdf8;
+}
+
+header p{
+color:#cbd5e1;
+}
 
 .btn{
 display:inline-block;
 margin-top:20px;
 padding:12px 25px;
-background:#2dd4bf;
+background:#38bdf8;
 color:black;
-border-radius:30px;
-font-weight:bold;
+border-radius:25px;
 text-decoration:none;
+font-weight:bold;
 }
 
 /* SECTION */
 section{
-padding:60px 8%;
+padding:50px 8%;
+max-width:1000px;
+margin:auto;
 }
 
-.title{
-text-align:center;
-font-size:2rem;
-margin-bottom:30px;
-position:relative;
-}
-
-.title::after{
-content:"";
-width:90px;
-height:4px;
-background:#2dd4bf;
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-bottom:-10px;
-border-radius:10px;
+h2{
+color:#38bdf8;
+margin-bottom:15px;
 }
 
 /* CARD */
 .card{
 background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:15px;
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.1);
-margin-bottom:15px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 0 20px rgba(45,212,191,0.4);
+padding:15px;
+margin:10px 0;
+border-radius:10px;
 }
 
 /* GRID */
-.cards{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+gap:15px;
 }
 
-/* COUNTER */
-.counter{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.count-box{
-background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:15px;
-min-width:150px;
-text-align:center;
-}
-
-/* SOCIAL CENTER */
+/* SOCIAL */
 .social{
 display:flex;
 justify-content:center;
-align-items:center;
 gap:15px;
-flex-wrap:wrap;
 margin-top:20px;
 }
 
 .social a{
-display:flex;
-align-items:center;
-gap:8px;
-padding:12px 18px;
-border-radius:25px;
-background:rgba(255,255,255,0.05);
-color:#2dd4bf;
+color:#38bdf8;
 text-decoration:none;
-transition:0.3s;
-}
-
-.social a:hover{
-transform:translateY(-3px);
-box-shadow:0 0 15px rgba(45,212,191,0.5);
-}
-
-/* EDUCATION TEXT */
-.card h3{
-color:#2dd4bf;
-margin-bottom:8px;
-}
-
-.card p{
-color:#cbd5e1;
-line-height:1.5;
+padding:10px 15px;
+background:rgba(255,255,255,0.05);
+border-radius:20px;
 }
 </style>
 </head>
@@ -164,83 +105,75 @@ line-height:1.5;
 
 <!-- NAV -->
 <nav>
-<h2>PORTFOLIO</h2>
+<div>PORTFOLIO</div>
 <div>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#education">Education</a>
+<a href="#edu">Education</a>
 <a href="#skills">Skills</a>
+<a href="#extra">More</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
 
 <!-- HOME -->
 <header id="home">
-<h1>YOUR NAME</h1>
+<h1>ANJANA P</h1>
 <p>BCA Student | Developer | AI Enthusiast</p>
 <a class="btn">Download Resume</a>
 </header>
 
 <!-- ABOUT -->
 <section id="about">
-<h2 class="title">About Me</h2>
-<div class="card">Passionate learner in software development, AI tools, and modern technologies.</div>
+<h2>About Me</h2>
+<div class="card">
+Passionate student in software development, AI tools, web technologies and programming.
+</div>
 </section>
 
-<!-- CAREER -->
+<!-- CAREER OBJECTIVE -->
 <section>
-<h2 class="title">Career Objective</h2>
-<div class="card">To become a skilled software engineer and build impactful solutions.</div>
+<h2>Career Objective</h2>
+<div class="card">
+To become a skilled software engineer and build innovative digital solutions.
+</div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
-<h2 class="title">Education</h2>
+<section id="edu">
+<h2>Education</h2>
 
-<div class="cards">
+<div class="card">BCA (2024 - Present)</div>
+<div class="card">Higher Secondary (2022 - 2024)</div>
+<div class="card">SSLC (2022)</div>
 
-<div class="card">
-<h3>BCA (2024 - Present)</h3>
-<p>Bachelor of Computer Applications. Learning programming, web development, AI basics.</p>
-</div>
-
-<div class="card">
-<h3>Higher Secondary (2022 - 2024)</h3>
-<p>Completed +2 with computer science foundation and mathematics.</p>
-</div>
-
-<div class="card">
-<h3>SSLC (2022)</h3>
-<p>Completed secondary education with strong academic foundation.</p>
-</div>
-
-</div>
 </section>
 
 <!-- EXPERIENCE -->
 <section>
-<h2 class="title">Experience (IIT Palakkad)</h2>
-<div class="card">Internship experience in technology and research environment.</div>
+<h2>Experience</h2>
+<div class="card">IIT Palakkad Internship - Research & Technical Exposure</div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-<h2 class="title">Technical Expertise</h2>
-<div class="cards">
-<div class="card">Python</div>
-<div class="card">Java</div>
+<h2>Technical Expertise</h2>
+<div class="grid">
 <div class="card">HTML</div>
 <div class="card">CSS</div>
 <div class="card">JavaScript</div>
+<div class="card">Python</div>
+<div class="card">Java</div>
+<div class="card">MySQL</div>
 </div>
 </section>
 
-<!-- PROFESSIONAL -->
+<!-- PROFESSIONAL SKILLS -->
 <section>
-<h2 class="title">Professional Skills</h2>
-<div class="cards">
-<div class="card">Communication</div>
+<h2>Professional Skills</h2>
+<div class="grid">
 <div class="card">Team Work</div>
+<div class="card">Communication</div>
 <div class="card">Problem Solving</div>
 <div class="card">Leadership</div>
 </div>
@@ -248,146 +181,145 @@ line-height:1.5;
 
 <!-- CERTIFICATIONS -->
 <section>
-<h2 class="title">Certifications</h2>
-<div class="counter">
-<div class="count-box">5+ Certifications</div>
-<div class="count-box">Add-on Courses</div>
-<div class="count-box">Internship</div>
-<div class="count-box">Skill Growth</div>
-</div>
+<h2>Certifications</h2>
+<div class="card">5+ Certifications in Web & IT Skills</div>
+</section>
+
+<!-- ADD-ON -->
+<section>
+<h2>Add-on Certifications</h2>
+<div class="card">AI Tools, Web Development, Basic Data Analytics</div>
 </section>
 
 <!-- PROJECTS -->
 <section>
-<h2 class="title">Featured Projects</h2>
-<div class="cards">
+<h2>Featured Projects</h2>
 <div class="card">Student Management System</div>
 <div class="card">Portfolio Website</div>
-</div>
 </section>
 
-<!-- ALL EXTRA TOPICS -->
+<!-- INTERESTS -->
 <section>
-<h2 class="title">My Journey</h2>
-<div class="card">Student → Developer → Intern → Future Engineer</div>
+<h2>Areas of Interest</h2>
+<div class="card">AI, Web Development, Software Engineering</div>
 </section>
 
+<!-- TOOLS -->
 <section>
-<h2 class="title">Future Goals</h2>
-<div class="card">Become a skilled Software Engineer & AI Developer</div>
+<h2>Tools & Technologies</h2>
+<div class="card">VS Code, GitHub, Canva, MySQL</div>
 </section>
 
+<!-- HOBBIES -->
 <section>
-<h2 class="title">Learning Path</h2>
-<div class="card">Python → Web Dev → AI → Data Science</div>
+<h2>Hobbies</h2>
+<div class="card">Coding, Music, Reading, Designing</div>
 </section>
 
+<!-- LANGUAGES -->
 <section>
-<h2 class="title">AI Exploration</h2>
-<div class="card">Learning AI tools and automation systems.</div>
+<h2>Languages Known</h2>
+<div class="card">Malayalam, English, Hindi</div>
 </section>
 
+<!-- JOURNEY -->
 <section>
-<h2 class="title">Current Focus</h2>
-<div class="card">Improving coding skills and building projects.</div>
+<h2>My Journey</h2>
+<div class="card">Student → Learner → Developer → Future Engineer</div>
 </section>
 
+<!-- FUTURE -->
 <section>
-<h2 class="title">Recent Learnings</h2>
+<h2>Future Goals</h2>
+<div class="card">Become a Software Developer & AI Engineer</div>
+</section>
+
+<!-- LEARNING -->
+<section>
+<h2>Learning Path</h2>
+<div class="card">Python → Web → AI → Data Science</div>
+</section>
+
+<!-- AI -->
+<section>
+<h2>AI Exploration</h2>
+<div class="card">Learning AI tools and automation systems</div>
+</section>
+
+<!-- CURRENT -->
+<section>
+<h2>Current Focus</h2>
+<div class="card">Improving coding skills and building projects</div>
+</section>
+
+<!-- RECENT -->
+<section>
+<h2>Recent Learnings</h2>
 <div class="card">HTML, CSS, JavaScript, GitHub</div>
 </section>
 
+<!-- ACADEMIC -->
 <section>
-<h2 class="title">Academic Highlights</h2>
-<div class="card">Good academic performance in BCA.</div>
+<h2>Academic Highlights</h2>
+<div class="card">Good academic performance in BCA</div>
 </section>
 
+<!-- WORKSHOPS -->
 <section>
-<h2 class="title">Workshops & Seminars</h2>
-<div class="card">Attended tech workshops and seminars.</div>
+<h2>Workshops & Seminars</h2>
+<div class="card">Attended IT workshops</div>
 </section>
 
+<!-- TEAM -->
 <section>
-<h2 class="title">Team Collaboration</h2>
-<div class="card">Worked in group projects effectively.</div>
+<h2>Team Collaboration</h2>
+<div class="card">Worked in group projects</div>
 </section>
 
+<!-- PROBLEM -->
 <section>
-<h2 class="title">Problem Solving Approach</h2>
-<div class="card">Analyze → Break → Solve → Improve</div>
+<h2>Problem Solving Approach</h2>
+<div class="card">Understand → Plan → Execute → Improve</div>
 </section>
 
+<!-- WHY -->
 <section>
-<h2 class="title">Quick Facts</h2>
-<div class="cards">
-<div class="card">Fast Learner</div>
-<div class="card">Creative Thinker</div>
-<div class="card">Team Player</div>
-</div>
+<h2>Why Choose Me</h2>
+<div class="card">Hardworking, Fast Learner, Dedicated</div>
 </section>
 
+<!-- PROFILE -->
 <section>
-<h2 class="title">Creative Skills</h2>
-<div class="card">UI Design, Canva, Basic Editing</div>
+<h2>Professional Profile</h2>
+<div class="card">Aspiring Software Developer</div>
 </section>
 
+<!-- STRENGTHS -->
 <section>
-<h2 class="title">Digital Skills</h2>
-<div class="card">Internet Tools, Cloud Basics, AI Tools</div>
+<h2>Personal Strengths</h2>
+<div class="card">Creativity, Communication, Adaptability</div>
 </section>
 
+<!-- MISSION -->
 <section>
-<h2 class="title">Knowledge Areas</h2>
-<div class="cards">
-<div class="card">Programming</div>
-<div class="card">Web Development</div>
-<div class="card">AI Basics</div>
-</div>
+<h2>Mission & Vision</h2>
+<div class="card">To become a successful software engineer</div>
 </section>
 
+<!-- NETWORK -->
 <section>
-<h2 class="title">Why Choose Me</h2>
-<div class="card">Hardworking, Quick Learner, Problem Solver</div>
-</section>
-
-<section>
-<h2 class="title">Professional Profile</h2>
-<div class="card">Dedicated student passionate about technology.</div>
-</section>
-
-<section>
-<h2 class="title">Personal Strengths</h2>
-<div class="card">Communication, Creativity, Adaptability</div>
-</section>
-
-<section>
-<h2 class="title">Mission & Vision</h2>
-<div class="card">To become a successful software engineer.</div>
-</section>
-
-<section>
-<h2 class="title">Professional Network</h2>
-<div class="card">LinkedIn, GitHub, Learning Communities</div>
+<h2>Professional Network</h2>
+<div class="card">LinkedIn, GitHub, Tech Communities</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2 class="title">Let's Connect</h2>
+<h2>Let's Connect</h2>
 
 <div class="social">
-
-<a href="https://linkedin.com">
-<i class="fa-brands fa-linkedin"></i> LinkedIn
-</a>
-
-<a href="https://github.com">
-<i class="fa-brands fa-github"></i> GitHub
-</a>
-
-<a href="mailto:yourmail@gmail.com">
-<i class="fa-solid fa-envelope"></i> Email
-</a>
-
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="mailto:anjanap@gmail.com">Email</a>
 </div>
 
 </section>
